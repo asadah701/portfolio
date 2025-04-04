@@ -1,0 +1,75 @@
+uuid: b49a6599-bed7-4878-bcf2-7f6292df1e7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_sections
+    - node.type.landing_page
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d1fe4686-929f-47c1-83ce-6b258d3915b9:
+            uuid: d1fe4686-929f-47c1-83ce-6b258d3915b9
+            region: content
+            configuration:
+              id: 'extra_field_block:node:landing_page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          860b68d9-bac2-4fcc-9817-b14bc4053895:
+            uuid: 860b68d9-bac2-4fcc-9817-b14bc4053895
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:field_sections'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  field_sections:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: c156b4a0-86f4-489b-b78f-4594c45bfd7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.hero_section
+  module:
+    - text
+id: paragraph.hero_section.field_headline
+field_name: field_headline
+entity_type: paragraph
+bundle: hero_section
+label: Headline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

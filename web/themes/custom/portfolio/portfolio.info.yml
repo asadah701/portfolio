@@ -1,0 +1,14 @@
+name: Portfolio
+type: theme
+description: 'A custom Drupal theme.'
+core_version_requirement: ^9 || ^10 || ^11
+base theme: claro
+
+libraries:
+  - portfolio/global-styling
+
+regions:
+  header: Header
+  content: Content
+  sidebar: Sidebar
+  footer: Footer

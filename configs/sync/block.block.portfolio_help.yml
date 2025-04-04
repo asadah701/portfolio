@@ -1,0 +1,22 @@
+uuid: 93500ddc-ca7f-4802-a695-627acc16f822
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - portfolio
+_core:
+  default_config_hash: jccFSSVqV0WCDb6NtML1VWAWTtDbZ-zn5YgTRMgMrIM
+id: portfolio_help
+theme: portfolio
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
